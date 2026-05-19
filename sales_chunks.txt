@@ -1,0 +1,30 @@
+[KPIs globales]
+Resumen general de ventas: Venta total: $9,934,833.82. Venta promedio por orden: $3,519.25. Venta máxima: $7,964.85. Venta mínima: $482.13. Total de órdenes: 2,823.
+
+[Ventas por producto]
+Ventas por línea de producto: CLASSIC CARS: total $3,865,484.79, promedio $3,997.40, 967 órdenes. VINTAGE CARS: total $1,879,004.41, promedio $3,095.56, 607 órdenes. MOTORCYCLES: total $1,154,421.53, promedio $3,487.68, 331 órdenes. TRUCKS AND BUSES: total $1,125,623.05, promedio $3,739.61, 301 órdenes. PLANES: total $970,631.64, promedio $3,172.00, 306 órdenes. SHIPS: total $714,437.13, promedio $3,053.15, 234 órdenes. TRAINS: total $225,231.27, promedio $2,925.08, 77 órdenes. 
+
+[Ventas por año]
+Ventas por año: Año 2003: $3,497,607.65 en 1000 órdenes. Año 2004: $4,687,795.73 en 1345 órdenes. Año 2005: $1,749,430.45 en 478 órdenes. 
+
+[Ventas por trimestre]
+Ventas por trimestre: Q1 2003: $444,077.04. Q2 2003: $557,013.23. Q3 2003: $642,855.06. Q4 2003: $1,853,662.30. Q1 2004: $828,523.14. Q2 2004: $763,051.85. Q3 2004: $1,103,776.01. Q4 2004: $1,992,444.73. Q1 2005: $1,062,462.42. Q2 2005: $686,968.04. 
+
+[Top clientes]
+Top 10 clientes por volumen de ventas: 1. EURO SHOPPING CHANNEL: $902,217.88. 2. MINI GIFTS DISTRIBUTORS LTD.: $647,302.66. 3. AUSTRALIAN COLLECTORS, CO.: $197,886.23. 4. MUSCLE MACHINE INC: $194,248.69. 5. LA ROCHELLE GIFTS: $178,050.15. 6. DRAGON SOUVENIERS, LTD.: $168,541.54. 7. LAND OF TOYS INC.: $164,069.44. 8. AV STORES, CO.: $157,807.81. 9. ANNA'S DECORATIONS, LTD: $153,110.99. 10. THE SHARP GIFTS WAREHOUSE: $152,000.30. 
+
+[Ventas por país]
+Ventas por país: USA: $3,589,343.68 (1004 órdenes). SPAIN: $1,203,627.32 (342 órdenes). FRANCE: $1,094,593.71 (314 órdenes). AUSTRALIA: $626,116.65 (185 órdenes). UK: $474,274.93 (144 órdenes). ITALY: $372,280.15 (113 órdenes). FINLAND: $326,940.57 (92 órdenes). NORWAY: $305,527.10 (85 órdenes). SINGAPORE: $284,040.27 (79 órdenes). DENMARK: $241,987.18 (63 órdenes). CANADA: $222,978.52 (70 órdenes). GERMANY: $219,495.99 (62 órdenes). SWEDEN: $210,014.21 (57 órdenes). AUSTRIA: $200,633.69 (55 órdenes). JAPAN: $185,374.67 (52 órdenes). SWITZERLAND: $117,713.56 (31 órdenes). BELGIUM: $108,412.62 (33 órdenes). PHILIPPINES: $94,015.73 (26 órdenes). IRELAND: $57,463.28 (16 órdenes). 
+
+[Estado de órdenes]
+Estado de las órdenes: SHIPPED: 2617 órdenes (92.7%). CANCELLED: 60 órdenes (2.1%). RESOLVED: 47 órdenes (1.7%). ON HOLD: 44 órdenes (1.6%). IN PROCESS: 41 órdenes (1.5%). DISPUTED: 14 órdenes (0.5%). 
+
+[Ventas por ciudad]
+Top 10 ciudades por ventas: MADRID: $1,070,491.84. SAN RAFAEL: $647,302.66. NYC: $557,054.93. SINGAPORE: $284,040.27. PARIS: $264,338.81. SAN FRANCISCO: $220,264.36. NEW BEDFORD: $205,773.11. NANTES: $202,230.11. MELBOURNE: $197,886.23. BRICKHAVEN: $161,032.57. 
+
+[Tamaño de deals]
+Ventas por tamaño de deal: LARGE: $1,204,324.23 (157 órdenes). MEDIUM: $6,087,432.24 (1384 órdenes). SMALL: $2,643,077.35 (1282 órdenes). 
+
+[Productos más vendidos]
+Top 10 productos más vendidos por cantidad: S18_3232: 1,774 unidades. S24_3856: 1,040 unidades. S18_4600: 1,031 unidades. S700_4002: 1,029 unidades. S12_4473: 1,024 unidades. S24_3949: 1,008 unidades. S18_1097: 999 unidades. S50_1341: 999 unidades. S18_2432: 998 unidades. S18_1342: 997 unidades. 
+
