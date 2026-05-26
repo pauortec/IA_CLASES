@@ -1,0 +1,26 @@
+# Agente RAG — LangChain + FAISS + Mistral
+
+Sistema de preguntas y respuestas sobre datos de ventas usando RAG.
+
+## Flujo
+Pregunta → Embeddings → Búsqueda FAISS → Contexto relevante → Mistral → Respuesta
+
+## Celdas
+
+C1 - Instalación: langchain, langchain-mistralai, langchain-community, faiss-cpu
+C2 - Imports: Document, ChatPromptTemplate, StrOutputParser, RunnablePassthrough
+C3 - Carga del CSV sales_data_sample.csv con pandas
+C4 - crear_documentos(): convierte el DataFrame en 10 Documents con metadata temática
+C5 - MistralAIEmbeddings + FAISS.from_documents para construir el vector store
+C6 - Retriever con search_type=similarity y k=3 documentos por consulta
+C7 - ChatMistralAI temperature=0 + ChatPromptTemplate con variables context y question
+C8 - formatear_docs() + cadena RAG moderna con LCEL usando el operador pipe
+C9 - Pruebas con rag_chain.invoke(): año top 2004 con $4,724,162 y Classic Cars líder
+C10 - Chat interactivo en español con manejo automático del rate limit 429
+
+## Resultados
+- Año con más ventas: 2004 — $4,724,162.60
+- Línea líder: Classic Cars — $3,919,615.66
+
+## Requisitos
+API key de Mistral en Colab Secrets con el nombre MISTRAL_KEY
