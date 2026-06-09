@@ -104,13 +104,8 @@ def generar_informe_directivo(texto_metricas):
 if __name__ == "__main__":
     RUTA_DATOS = "datos_empleados.csv"
 
-    # Fase 1
     df_procesado = procesar_datos_empleados(RUTA_DATOS)
-
-    # Fase 2
     modelo, metricas = construir_modelo_fuga(df_procesado)
-
-    # Fase 3
     informe = generar_informe_directivo(metricas)
 
     if informe:
