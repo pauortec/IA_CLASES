@@ -22,3 +22,5 @@ Agregar la key en Colab Secrets con el nombre MISTRAL_KEY
 
 Dataset
 sales_data_sample.csv — dataset público de ventas de Kaggle (kyanyoga/sample-sales-data)
+
+
