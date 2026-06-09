@@ -60,3 +60,61 @@ def construir_modelo_fuga(dataframe):
 
     print(f"✅ [Fase 2] Modelo entrenado.\n{texto_metricas}")
     return clasificador_rf, texto_metricas
+
+# =======================================================
+# FASE 3: INTERPRETACIÓN CON IA GENERATIVA
+# =======================================================
+def generar_informe_directivo(texto_metricas):
+    """
+    Utiliza un LLM para traducir los resultados técnicos a lenguaje de negocios.
+    """
+    print("⏳ [Fase 3] Conectando con Mistral AI para redactar el informe directivo...")
+
+    mi_token = os.getenv("MISTRAL_API_KEY")
+    if not mi_token:
+        raise ValueError("❌ Variable de entorno MISTRAL_API_KEY no definida.")
+
+    try:
+        modelo_llm = ChatMistralAI(mistral_api_key=mi_token, model="mistral-large-latest")
+
+        instrucciones = f"""
+        Actúa como un experto consultor en People Analytics y Recursos Humanos.
+        Hemos entrenado un algoritmo predictivo de fuga de talentos y obtenemos los siguientes resultados:
+
+        {texto_metricas}
+
+        Redacta un informe ejecutivo breve (máximo 3 párrafos) dirigido a la alta dirección,
+        explicando qué significan estos resultados, su impacto en la organización
+        y una recomendación accionable.
+        """
+
+        respuesta = modelo_llm.invoke([HumanMessage(content=instrucciones)])
+        informe = respuesta.content
+
+        print("✅ [Fase 3] Informe generado exitosamente.")
+        return informe
+
+    except Exception as e:
+        print(f"❌ [Fase 3] Error al conectar con Mistral AI: {e}")
+        return None
+
+# =======================================================
+# BLOQUE PRINCIPAL DE EJECUCIÓN
+# =======================================================
+if __name__ == "__main__":
+    RUTA_DATOS = "datos_empleados.csv"
+
+    # Fase 1
+    df_procesado = procesar_datos_empleados(RUTA_DATOS)
+
+    # Fase 2
+    modelo, metricas = construir_modelo_fuga(df_procesado)
+
+    # Fase 3
+    informe = generar_informe_directivo(metricas)
+
+    if informe:
+        print("\n" + "="*60)
+        print("📋 INFORME DIRECTIVO")
+        print("="*60)
+        print(informe)
